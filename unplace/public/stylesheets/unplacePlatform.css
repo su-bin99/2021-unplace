@@ -70,6 +70,10 @@ header  {
 }
 
 /* 하단바 */
+footer{
+    background-color: #272735;
+    color: #fff;
+}
 
 #footerMenu > ul {
 	list-style:none;
@@ -85,31 +89,30 @@ header  {
 }
 
 #footerMenu > ul > li > span {
-	font-size:0.8em;
+	font-size:0.9em;
 	font-family: "맑은 고딕", "돋움";
 	font-weight: bold;
 	margin-left:15px;
-	color:grey;
 }
 
 #footerMenu > ul > li > span:hover {
-	font-size:0.8em;
+	font-size:0.9em;
 	font-family: "맑은 고딕", "돋움";
 	margin-left:15px;
-	color:#c7340a;
+	color:#7BC8E6;
 }
 
 #footerInfo > p {
-	font-size:0.5em;
+	font-size:0.7em;
 	font-family: "맑은 고딕", "돋움";
 	font-weight: normal;
 	margin-left:15px;
-	color:grey;
 }
 
 #footerInfo > p > span {
 	color: light-grey;
 }
+
 
 /* advertisements */
 #advertisement_container {
