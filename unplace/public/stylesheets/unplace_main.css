@@ -388,7 +388,7 @@ header  {
 #review .img-wrap{
     display:block;
     width: 100%;
-    vertical-align:middle;
+    vertical-align : middle;
     display : table-cell;
     text-align: center;
 }
