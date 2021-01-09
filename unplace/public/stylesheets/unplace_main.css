@@ -1,0 +1,353 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: "Jeju Gothic", serif;
+    min-width: 920px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:link,
+a:visited {
+    color: #000;
+}
+
+nav a:active {
+    color: yellow;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3{
+    font-size: 1.2em;
+    color: #7D1626;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 2.5;
+}
+
+li {
+    font-size: 1em;
+    line-height: 2;
+}
+
+#container {
+    width: 100%; /*화면 크기 비율 설정 */
+    margin: 0 auto;
+}
+
+@media screen and (min-width:1200px) {
+    #container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    header{
+        width : 100;
+    }
+}
+
+/* 상단바 코드 */
+header  {
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    /* background: url(images/바보개.jpg) center no-repeat; */
+    background-size: cover;
+}
+
+#navi {
+    min-width: 860px;
+
+    background-color: #fff;
+    position : fixed;
+    top : 0;
+    z-index:20;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 15px 5% 15px 5%;
+    box-shadow: 0px 4px 4px 3px rgb(209, 208, 208);
+}
+
+.main-nav li {
+    display: inline-block;
+    color: #000;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 1em;
+    margin: 10px 10px;
+}
+
+#navi .page-icon{
+    float: left;
+    margin-right: 70px;
+}
+#navi .main-nav{
+    float : left;
+}
+
+.login-signup li {
+    display: inline-block;
+    color: #000;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 1em;
+    margin: 10px 5px;
+}
+
+#navi .login-signup{
+    float : right ;
+    /* margin-right: 30px;    */
+    font-size: 0.8em;
+    margin-top: 3px;
+}
+
+
+
+#navi .new-festival-back{
+    float : right ;
+    font-size: 1.2em;    
+    font-family: "맑은 고딕", 돋움;
+    margin-left: 15px;
+    background-color: #7D1626;     
+}
+
+#navi .new-festival{
+    margin: 5px;
+    color: white;
+}
+
+/* 학교 광고 및 홍보  */
+
+.univ-name{
+    width: 700px;
+    font-weight: bold;
+    padding: 0px 0px 0px 5% ;
+}
+
+#univ-main .univ-name li{
+    display: inline-block;
+    color: #7D1626;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 1.1em;
+    margin: 10px 0px 0px 0px;
+    /* text-align: center */
+}
+
+#univ-main .red-slogan {
+    position: relative;
+    width: 100%;
+    /* width: 100vw;
+    margin-left: calc(-50vw + 50%); */
+    height: 200px;
+    background: #7D1626;
+    border-top: 20px solid #7D1626;
+    text-align: center;
+}
+
+#univ-main .slogan pre {
+    font-weight: bold;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 2.3em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#univ-main .univ-fest-info li {
+    display: inline-block;
+    color: #fff;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 0.9em;
+    margin: 0px 10px 0px 0px;
+    text-align: center
+}
+
+/* 인기 순위 */
+#ranking {
+    font-weight: bold;
+    padding: 15px 0px 0px 5% ;
+    font-size: 0.9em;
+    color: #7D1626;
+}
+
+#ranking .ranks{
+    display : flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#ranking .rank-one{
+    flex: 1;
+    /* flex-direction: row;
+    justify-content : center;
+    align-items : center; */
+}
+
+#ranking .rank-one ul{
+    /* border: 3px solid #7D1626; */
+    text-align: center;
+}
+
+
+#ranking .rank-one li{
+    display :table-row;
+    vertical-align: middle;
+    margin : auto;
+}
+
+#ranking .rank-one img{
+    box-sizing: border-box;
+    height: 130px;
+    width: 130px;
+    margin: 10px 10px 10px 0px;
+    border: 3px solid #7D1626;
+    border-radius:50%;
+}
+
+/* 시간표 , 이벤트 */
+#timetable-event .tt-ev{
+    /* margin-top: 20px; */
+    display: flex;
+    height: 350px;
+    /* background-color: coral; */
+    margin: 40px 5% 0px 5% ;
+}
+
+
+
+#timetable-event .timetable{
+    flex : 3;
+    /* background-color: aquamarine; */
+    margin: 7px;
+}
+
+#timetable-event .content{
+    box-sizing: border-box;
+    height: 87%;
+    margin: 10px 10px 10px 0px;
+    border: 3px solid #7D1626;
+    border-radius: 2%;
+}
+
+#timetable-event .event{
+    flex : 2;
+    margin: 7px;
+
+}
+
+/* 축제로 이동하기 */
+#go-Festv {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background: #333333;
+    border-top: 20px solid #333333;
+    text-align: left;
+}
+
+#go-Festv .to-Festv-info{
+    margin: 0px 0px 0px 8% ;
+    float: left;
+}
+#go-Festv .go-festv-btn{
+    box-sizing: border-box;
+    width: 120px;
+    height: 45px;
+    margin: 20px 10px 10px 0px;
+    background-color: yellow;
+    border-radius: 10%;
+    text-align: center;
+    color: #333333;
+}
+
+#go-Festv .festv-deco-img{
+    float: right;
+    height: 10px;
+    margin-right: 300px;
+}
+
+/* 후기 */
+#review {
+    font-weight: bold;
+    padding: 30px 0px 0px 5% ;
+    font-size: 0.9em;
+    color: #7D1626;
+}
+
+#review .reviews{
+    display : flex;
+    width: 100%;
+    flex-direction: row;
+    
+}
+
+#review .review-one{
+    flex: 1;
+    /* flex-direction: row;
+    justify-content : center;
+    align-items : center; */
+}
+
+#review .review-one ul{
+    text-align: center;
+}
+
+
+#review .review-one li{
+    /* box-sizing: border-box;
+    width: 150px;
+    margin: 0px 10px 0px 10px;
+    color: #000;
+    font-size: 12px; */
+
+    display :block;
+    text-align: left;
+    margin-right: 30px;
+}
+
+#review .review-one img{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 0px 0px;
+    border: 3px solid #7D1626;
+    border-radius:5%;
+}
+
+
+/* 하단 설명  */
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #7D1626;
+}
+
+footer p {
+    font-family: 'Oleo Script', cursive;
+    font-size: 1.5em;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+}
+
