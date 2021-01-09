@@ -7,10 +7,10 @@ const   createError = require('http-errors');
 const   path = require('path');
 const   app = express();
 
-// 쇼핑몰 개발소스 모듈
 const   mainui = require('./routes/mainui');
 const   users = require('./routes/users');
-// 쇼핑몰전용 PORT주소 설정
+const   firstpage = require('./routes/firstpage');
+//주소 설정
 const   PORT = 65007;
 
 // 실행환경 설정부분
@@ -27,8 +27,9 @@ app.use(session({ key: 'sid',
                   saveUninitialized: true })); // 세션id사용전에는 발급금지
 
 // URI와 핸들러를 매핑
-app.use('/', mainui);       // URI (/) 접속하면 mainui로 라우팅
-app.use('/users', users);   // URI('/users') 접속하면 users로 라우팅
+app.use('/', firstpage);       // URI (/) 접속하면 firstpage로 라우팅
+app.use('/users', users); 
+app.use('/mainui',mainui);
 // app.use('/log', login);
 // app.use('/log', login);
 // app.use('/log', login);
