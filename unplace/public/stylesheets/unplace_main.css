@@ -273,7 +273,6 @@ header  {
     /* background-color: bisque; */
     /* background: url(image_files/호랑이마크.png) center no-repeat; */
     background-size: cover;
-<<<<<<< HEAD
     background-position: center;
     border-collapse: collapse;
 
@@ -281,10 +280,7 @@ header  {
 
 #timetable-event th{
     color: #969696;
-=======
-    background-image: url( "image_files/호랑이마크.png" );
-
->>>>>>> 037d708eda8319d2ac6f7494b56f4d8cadb52099
+    background-image: url( "/image_files/호랑이마크.png" );
 }
 
 #timetable-event .line1 th{
@@ -297,7 +293,6 @@ header  {
     border-radius:3px;
 }
 
-<<<<<<< HEAD
 #timetable-event .actual-time{
     background-color : none;
     border: 3px solid #7D1626;
@@ -309,8 +304,6 @@ header  {
     color : #fff;
 }
 
-=======
->>>>>>> 037d708eda8319d2ac6f7494b56f4d8cadb52099
 
 #timetable-event .th-left{
     border-right: 2px solid #969696;
@@ -328,7 +321,7 @@ header  {
     border: 3px solid #7D1626;
     border-radius: 2%;
     background-size: cover;
-    background-image: url( "image_files/호랑이마크2.png" );
+    background-image: url( "/image_files/호랑이마크2.png" );
 }
 
 /* 축제로 이동하기 */
@@ -343,7 +336,7 @@ header  {
     width: 100%;
     height : 100%;
     background-size: cover;
-    background-image: url("image_files/축제이동배경.png");
+    background-image: url("/image_files/축제이동배경.png");
 }
 
 #go-Festv .to-Festv-info{
