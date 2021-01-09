@@ -1,36 +1,30 @@
 <!DOCTYPE HTML>
-<!--
-	Ion by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
-	<head>
-		<link href="/stylesheets/unplacePlatform.css" type="text/css" rel="stylesheet">
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	</head>
-	
+<head>
+	<title>Unplace, 언택트 시대에서 축제를 즐기다!</title>
+	<link href="../public/stylesheets/unplacePlatform.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 	
 <body>
 	<!-- header -->
-	<header>
+    <header>
         <nav id="navi">
             <div class="page-icon">
-                <img src="/image_files/juhee_images/로고.PNG" height="50px" alt="">
+                <img src="../public/image_files/juhee_images/로고.PNG" height="50px" alt="">
             </div>
             <ul class="main-nav">
-                <li><a href="">학교 축제</a></li>
-                <li><a href="" target="blank">동아리 축제</a></li>
-                <li><a href="">관람</a></li>
-                <li><a href="">공지사항</a></li>
-                <li><a href="">가격안내</a></li>
+                <li><a href="" class="hov">학교 축제</a></li>
+                <li><a href="" class="hov">동아리 축제</a></li>
+                <li><a href="" class="hov">관람</a></li>
+                <li><a href="" class="hov">공지사항</a></li>
+                <li><a href="" class="hov">가격안내</a></li>
             </ul>
-
-
             <ul class="login-signup">
-                <li><a href="">로그인</a></li>
+                <li><a href="" class="hov">로그인</a></li>
                 <li><a>|</a></li>
-                <li><a href="">회원 가입</a></li>
+                <li><a href="" class="hov">회원 가입</a></li>
                 <li class="new-festival-back">
                     <a class="new-festival" href="">축제 개최하기</a>
                 </li>
@@ -40,7 +34,8 @@
 
 	<!-- advertisements -->
 	<section id="advertisements">
-		<div id="advertisement_container">
+		<div id="advertisement_container" style="background-image:url('../public/image_files/juhee_images/영어영문학과 연합MT.png')">
+			<img src="../public/image_files/juhee_images/이벤트 바로가기.png" id="startButton">
 		</div>
 	</section>
 
@@ -50,11 +45,21 @@
 	<section id="category_icons">
 		<table id="category_icons_container">
 			<tr>
-				<td width="20%"><img src="/image_files/juhee_images/하늘색 게임.png" width="100%"><td>
-				<td width="20%"><img src="/image_files/juhee_images/하늘색 코스프레.png" width="100%"></td>
-				<td width="20%"><img src="/image_files/juhee_images/하늘색전시회.png" width="100%"></td>
-				<td width="20%"><img src="/image_files/juhee_images/하늘색 공연.png" width="100%"></td>
-				<td width="20%"><img src="/image_files/juhee_images/하늘색 쇼핑.png" width="100%"></td>	
+				<td width="20%"><img src="../public/image_files/juhee_images/회색 게임.png" width="100%" 
+				onmouseover="this.src='../public/image_files/juhee_images/하늘색 게임.png'" 
+				onmouseout="this.src='../public/image_files/juhee_images/회색 게임.png'"><td>
+				<td width="20%"><img src="../public/image_files/juhee_images/회색 코스프레.png" width="100%" 
+				onmouseover="this.src='../public/image_files/juhee_images/하늘색 코스프레.png'" 
+				onmouseout="this.src='../public/image_files/juhee_images/회색 코스프레.png'"><td>
+				<td width="20%"><img src="../public/image_files/juhee_images/회색 전시회.png" width="100%" 
+				onmouseover="this.src='../public/image_files/juhee_images/하늘색 전시회.png'" 
+				onmouseout="this.src='../public/image_files/juhee_images/회색 전시회.png'"><td>
+				<td width="20%"><img src="../public/image_files/juhee_images/회색 공연.png" width="100%" 
+				onmouseover="this.src='../public/image_files/juhee_images/하늘색 공연.png'" 
+				onmouseout="this.src='../public/image_files/juhee_images/회색 공연.png'"><td>
+				<td width="20%"><img src="../public/image_files/juhee_images/회색 쇼핑.png" width="100%" 
+				onmouseover="this.src='../public/image_files/juhee_images/하늘색 쇼핑.png'" 
+				onmouseout="this.src='../public/image_files/juhee_images/회색 쇼핑.png'"><td>
 			</tr>
 		</table>
 	</section>
@@ -66,10 +71,10 @@
 		<table id="famous_current_festivals_container">
 			<tr>
 				<td width="59%">
-					<img src="/image_files/juhee_images/인기있는축제.png" width="100%">
+					<img src="../public/image_files/juhee_images/인기있는축제.png" width="100%">
 				</td>
 				<td width="41%">
-					<img src="/image_files/juhee_images/진행중.png" width="100%">
+					<img src="../public/image_files/juhee_images/진행중.png" width="100%">
 				</td>
 			</tr>
 		</table>
@@ -80,43 +85,45 @@
 	<!-- reviews -->
 	<section id="reviews">
 		<table id="reviews_container">
+			<tr><td><span>축제 이용 후기</span></td></tr>
+			<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
 			<tr>
 				<td width="20%">
-					<img src="/image_files/juhee_images/포스터예시1.jpg" width="100%">
+					<img src="../public/image_files/juhee_images/포스터예시1.jpg" width="100%">
 				</td>
 				<td width="20%">
-					<img src="/image_files/juhee_images/포스터예시2.jpg" width="100%">
+					<img src="../public/image_files/juhee_images/포스터예시2.jpg" width="100%">
 				</td>
 				<td width="20%">
-					<img src="/image_files/juhee_images/포스터예시3.jpg" width="100%">
+					<img src="../public/image_files/juhee_images/포스터예시3.jpg" width="100%">
 				</td>
 				<td width="20%">
-					<img src="/image_files/juhee_images/포스터예시4.jpg" width="100%">
+					<img src="../public/image_files/juhee_images/포스터예시4.jpg" width="100%">
 				</td>
 				<td width="20%">
-					<img src="/image_files/juhee_images/포스터예시5.jpg" width="100%">
+					<img src="../public/image_files/juhee_images/포스터예시5.jpg" width="100%">
 				</td>
 			</tr>
 			<tr>
-				<td>게임&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*****5</td>
-				<td>코스프레&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*****5</td>
-				<td>게임&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*****5</td>
-				<td>전시&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*****5</td>
-				<td>공연&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*****5</td>
+				<td class="categ">게임 | *****5</td>
+				<td class="categ">코스프레 | *****5</td>
+				<td class="categ">게임 | *****5</td>
+				<td class="categ">전시 | *****5</td>
+				<td class="categ">공연 | *****5</td>
 			</tr>
 			<tr>
-				<td>코로나 전에 공강 때마다 친구랑 PC방 가곤 했는데 딱 그맛임ㅋㅋ 온라인으로도 되는구나 이게...</td>
-				<td>야ㅋㅋ 여기 누가 세일러문 코스프레한다ㅋㅋ 여기 진짜로 광란의 부스임... 이거 놓치면 후회한다?</td>
-				<td>솔직히 Unplace 만든 사람들이 최고다... 작년에 코로나라서 학교 축제 못 한 게 가장 아쉬웠잖아.</td>
-				<td>전시회라고 해서 별로 기대 안 하고 왔는데 동아리 회원들의 열정이 느껴져서 정말 좋았어요.</td>
-				<td>우리 학교 댄스 동아리가 진짜 실력파인 것을 다시 한 번 상기시켜주는 공연이었음. 나는 몸치인데 대단함.</td>
+				<td class="desc">코로나 전에 공강 때마다 친구랑 PC방 가곤 했는데 딱 그맛임ㅋㅋ 온라인으로도 되는구나 이게...</td>
+				<td class="desc">야ㅋㅋ 여기 누가 세일러문 코스프레한다ㅋㅋ 여기 진짜로 광란의 부스임... 이거 놓치면 후회한다?</td>
+				<td class="desc">솔직히 Unplace 만든 사람들이 최고다... 작년에 코로나라서 학교 축제 못 한 게 가장 아쉬웠잖아.</td>
+				<td class="desc">전시회라고 해서 별로 기대 안 하고 왔는데 동아리 회원들의 열정이 느껴져서 정말 좋았어요.</td>
+				<td class="desc">우리 학교 댄스 동아리가 진짜 실력파인 것을 다시 한 번 상기시켜주는 공연이었음. 나는 몸치인데 대단함.</td>
 			</tr>
 			<tr>
-				<td>홍길동</td>
-				<td>홍길동</td>
-				<td>홍길동</td>
-				<td>홍길동</td>
-				<td>홍길동</td>
+				<td class="categ" style="text-align:right">이재우</td>
+				<td class="categ" style="text-align:right">이승희</td>
+				<td class="categ" style="text-align:right">차정현</td>
+				<td class="categ" style="text-align:right">김주희</td>
+				<td class="categ" style="text-align:right">배수빈</td>
 			</tr>
 		</table>
 	</section>
@@ -125,56 +132,65 @@
 	
 	<!-- direct -->
 	<section id="direct">
-		<div id="direct_container">
+		<div id="direct_container" style="background-image:url('../public/image_files/juhee_images/다이렉트.png')">
 		</div>
 	</section>
 	
 	<!-- participants -->
 	<section id="participants">
-		참여학교 들어갈공간임
+		<table id="participants_container">
+			<tr><td><span>이미 345대학과 함께하고 있습니다.</span></td></tr>
+			<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+			<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+			<tr><td>
+				<img src="../public/image_files/juhee_images/참여대학.png" width="100%">
+			</td></tr>
+		</table>
 	</section>
-		
+	
+	<br><br>
+	
 	<!-- open festival -->
 	<section id="open_festival">
-        <a href='/mainui/'>
-		<img src="/image_files/juhee_images/불꽃놀이.png" width="100%"></a>
+		<div id="open_festival_container" style="background-image:url('../public/image_files/juhee_images/불꽃놀이.png')">
+			<table style="padding-top:50px; margin-left:190px;">
+				<tr><td><span>수많은 대학들이 만족한 서비스, 지금 바로 경험해보세요.</span></td></tr>
+				<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+				<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+				<tr><td style="padding-left:270px;"><img src="../public/image_files/juhee_images/축제 시작하기.png" width="200px"></td></tr>
+			</table>
+		</div>
 	</section>
 	
 	<!-- footer -->
 	<footer>
-		<section id="footer" style="margin-left: 100px; margin-right:100px;">
-			<div id="footerMenu">
-				<ul>
-					<li><span>롯데월드 소개</span></li>
-					<li><span>기업 제휴 및 입점 문의</span></li>
-					<li><span>이용약관</span></li>
-					<li><span>개인정보처리방침</span></li>
-					<li><span>이메일무단수집거부</span></li>
-					<li><span>Compliance Program</span></li>
-					<li><span>사이트맵</span></li>
-					<li><span>인재채용</span></li>
-					<li><span>그룹PR</span></li>
-				</ul>
-				<form style="margin-left:50px">
-					<select name="sites">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-				</form>
-			</div>
-
-			<hr width="100%">
-			<div id="footerInfo">
-				<p>
-				서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드 <span>|</span> 대표자 최홍훈
+		<section id="footer">
+			<div id="footer_container">
 				<br>
-				사업자등록번호: 219-85-00014 <span>|</span> 통신판매업신고번호: 송파 제 5513호 <span>|</span> 전화: 1161-2000
+				<div id="footerMenu">
+					<ul>
+						<li><span>회사소개</span></li>
+						<li><span>학교협업문의</span></li>
+						<li><span>이용약관</span></li>
+						<li><span>개인정보처리방침</span></li>
+						<li><span>사업자확인</span></li>
+					</ul>
+				</div>
 				<br><br>
-				COPYRIGHT 2018 LOTTEWORLD.ALL RRIGHT RESERVED.
-				</p>
+				
+				<hr style="margin-left:170px; width:70%">
+				
+				<br>
+				<div id="footerInfo">
+					<p>
+					서울특별시 송파구 올림픽로 0000000 | 대표자 000
+					<br>
+					사업자등록번호: 000-00-00000 | 통신판매업자신고번호: 송파 제 0000호 | 전화: 0000-0000
+					<br><br><br><br>
+
+					</p>
+				</div>
 			</div>
-			
 		</section>
 	</footer>
 
