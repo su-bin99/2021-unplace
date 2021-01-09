@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unplace</title>
+    <link href="/stylesheets/unplace_main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav id="navi">
+            <div class="page-icon">
+                <img src="/image_files/logo.PNG" height="50px" alt="">
+            </div>
+            <ul class="main-nav">
+                <li><a href="">학교 축제</a></li>
+                <li><a href="" target="blank">동아리 축제</a></li>
+                <li><a href="">관람</a></li>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">가격안내</a></li>
+            </ul>
+
+
+            <ul class="login-signup">
+                <li><a href="">로그인</a></li>
+                <li><a>|</a></li>
+                <li><a href="">회원 가입</a></li>
+                <li class="new-festival-back">
+                    <a class="new-festival" href="">축제 개최하기</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="floating-btn">
+        <div class="btn">
+            <img src="/image_files/search-img.png" height="50px" alt="">
+        </div>
+    </section>
+
+    <div id="container">
+
+        <section id="univ-main">
+            <div>
+                <ul class="univ-name">
+                    <li><img src="/image_files/kulogo.png" height="40px" alt=""></li>
+                    <li><a style="font-size: 1.5em;">고려 대학교</a></li>
+                    <li><area>D - 0</area></li>
+                </ul>
+            </div>
+
+            <div class="red-slogan">
+                <img src="/image_files/main-img.png" width="100%">
+            </div>
+        </section>
+
+
+        <section id="ranking">
+            <h3>인기 순위</h3>
+
+            <div class="ranks">
+                <div class="rank-one">
+                    <ul>
+                        <li> <img src="/image_files/game.png" alt=""> </li>
+                        <li> <a>게임</a></li>
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li> <img src="/image_files/show.png" alt=""> </li>
+                        <li> <a>공연</a></li>
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li> <a href='/list_page/'><img src="/image_files/exhibit.png" alt=""></a> </li>
+                        <li> <a>전시</a></li>
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li> <img src="/image_files/costume.png" alt=""> </li>
+                        <li> <a>코스프레</a></li>
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li> <img src="/image_files/shop.png" alt=""> </li>
+                        <li> <a>판매</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="youtube">
+
+            <div class="youtube-stream">
+                <!--mute=1Chrome에서 자동 재생하려면 소리를 소거해야함(src 맨뒤에 &mute=1 추가) -->
+                <!--익스플로러는 이 코드 써도 자동 재생됨-->
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/<비디오id>?autoplay=1&mute=1"
+                    frameborder="0"
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="youtube-chatting">
+                <!--chatting-->
+                <!--https://www.youtube.com/live_chat?v=<your video ID>&embed_domain=<your blog domain>-->
+                <iframe class="chat" width="100%" height="400"
+                    src="https://www.youtube.com/live_chat?v=MPKVuFGx4kU&embed_domain=file:///C:/Users/chaj9/Desktop/고카톤/code/main.html"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            </div>
+        </section>
+
+        <section id=timetable-event>
+            <div class="tt-ev">
+                <div class=timetable>
+                    <ul>
+                        <li>
+                            <h3>시간표</h3>
+                        </li>
+                        <li><a style="margin: 0px 8px; color: #535353;">|</a></li>
+                        <li>
+                            <h4 style="color: #7d1626;">공연</h4>
+                        </li>
+                        <li>
+                            <h4>게임</h4>
+                        </li>
+                        <li>
+                            <h4>판매</h4>
+                        </li>
+                    </ul>
+
+                    <div class=content>
+                        <!-- 시간표 ... -->
+                        <table class=table>
+                            <!-- <caption>▶ 강의 시간표 ◀</caption> -->
+                            <col style="width : 12%">
+                            <col style="width : 22%">
+                            <col style="width : 22%">
+                            <col style="width : 22%">
+                            <col style="width : 22%">
+
+                            <tr class="line1">
+                                <th class="th-left"></th>
+                                <th>1 / 13</th>
+                                <th>1 / 14</th>
+                                <th>1 / 15</th>
+                                <th>1 / 16</th>
+                            </tr>
+                            <tr>
+                                <th class="th-left">9</th>
+                                <td></td>
+                                <!-- <td rowspan="2" style="background-color: #ecc369">Practsh A2</td>
+                                <td rowspan="2" style="background-color: #f08676">해부생리학2</td>
+                                <td rowspan="2" style="background-color: #70a5e9">Practih A4</td> -->
+                            </tr>
+                            <tr>
+                                <th class="th-left">10</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th class="th-left">11</th>
+                                <td rowspan="3" style="background-color:#EFE1E3">
+                               <label class="actTime">댄스 동아리 공연</label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th class="th-left">12</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th class="th-left">1</th>
+                                <td></td>
+                                <!-- <td rowspan="2" class = "actual-time" >삶과 철학</td> -->
+                                <td rowspan="2" style="background-color:#EFE1E3">
+                                     <label class="actTime">응원단 공연</label>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th class="th-left">2</th>
+                                <td></td>
+                                <td rowspan="2" style="background-color:#EFE1E3">
+                                     <label class="actTime">학생 장기자랑</label>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <th class="th-left">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class=event>
+                    <ul>
+                        <li>
+                            <h3>이벤트</h3>
+                        </li>
+                        <li><a style="margin: 0px 8px; color: #535353;">|</a></li>
+                        <li>
+                            <h4>학교</h4>
+                        </li>
+                        <li>
+                            <h4 style="color: #7d1626;">UNPLACE</h4>
+                        </li>
+                    </ul>
+                    <div class=event-content>
+                        <!-- 이벤트 ... -->
+
+                        <ul>
+                            <li> <a>여러 축제를 참여하면 포인트🎖를 얻을 수 있어요!</a></li>
+                            <li> <a>게임 1등에게만 돌아가는 상품이 있다?!</a></li>
+                            <li> <a>이달의 후기상!🏆 </a></li>
+                            <li> <a>참여율이 가장 높은 학교에게 간식을 쏩니다~!🍕🍔</a></li>
+                            <li> <a>네가 좋아하는 랜덤 게임~! 술 없는 랜덤 게임 한 판 어때요?</a></li>
+                            <li> <a>타자가 가장 빠른 학생이 많은 학교에게 상품을 쏩니다!(컴공생 출전 제외)</a></li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=go-Festv>
+            <div class=go-Festv-back>
+                <div class=to-Festv-info>
+                    <p style="color:yellow; font-size: 18px;">고려대축제 즐겨봅시다!</p>
+                    <p style="color:white; font-size: 14px; line-height: 0.6;"> 가장 화려하고 신나는 곳으로 갑시다~! </p>
+                    <div class=go-festv-btn>
+                        <p>바로 보기</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class=festv-deco-img>
+                <img src="/image_files/firework.png" height="140px" alt="">
+            </div> -->
+        </section>
+
+
+
+        <section id="review">
+            <h3>고려대축제 후기</h3>
+
+            <div class="reviews">
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/game2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>게임</p>
+                        </li>
+                        <li> <a>인터넷으로 하는 마피아게임이 이렇게 재미있을 줄 몰랐어요! 다음에는 꼭 우승을해서 상품을 타가겠습니다!</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/costume2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>코스프레</p>
+                        </li>
+                        <li> <a>코스프레 사진들 구경 잘했습니다! 다음엔 저도 참여하고 싶네요!ㅎㅎ</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/costume2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>코스프레</p>
+                        </li>
+                        <li> <a>코스프레 퀄리티가 높아서 놀랐어요..! 다음엔 저도 참여해보고 싶네요ㅎㅎ</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/exhibit2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>전시</p>
+                        </li>
+                        <li> <a>손재주가 좋으신 분들이 정말 많으시군요~ 하나하나 제작하시느라 오래 걸리셨을 것 같아요</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/game2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>게임</p>
+                        </li>
+                        <li> <a>우승 ㄱㅇㄷ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+    </div>
+	<!-- open festival -->
+	<section id="open_festival">
+		<div id="open_festival_container" style="background-image:url('/image_files/juhee_images/fireWork.png')">
+			<table style="padding-top:50px; margin-left:190px;">
+				<tr><td><span>수많은 대학들이 만족한 서비스, 지금 바로 경험해보세요.</span></td></tr>
+				<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+				<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+				<tr><td style="padding-left:270px;"><img src="/image_files/juhee_images/startFestival.png" width="200px"></td></tr>
+			</table>
+		</div>
+	</section>
+	
+	<!-- footer -->
+	<footer>
+		<section id="footer">
+			<div id="footer_container">
+				<br>
+				<div id="footerMenu">
+					<ul>
+						<li><span>회사소개</span></li>
+						<li><span>학교협업문의</span></li>
+						<li><span>이용약관</span></li>
+						<li><span>개인정보처리방침</span></li>
+						<li><span>사업자확인</span></li>
+					</ul>
+				</div>
+				<br><br>
+				
+				<hr style="margin-left:170px; width:70%">
+				
+				<br>
+				<div id="footerInfo">
+					<p>
+					서울특별시 송파구 올림픽로 0000000 | 대표자 000
+					<br>
+					사업자등록번호: 000-00-00000 | 통신판매업자신고번호: 송파 제 0000호 | 전화: 0000-0000
+					<br><br><br><br>
+
+					</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+			
+		</section>
+	</footer>
+
+
+</body>
+
+
+</html>
