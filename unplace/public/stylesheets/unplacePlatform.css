@@ -30,11 +30,11 @@ p {
     line-height: 2;
 }
 #container {
-    width: 100%; /*화면 크기 비율 설정 */
+    width: 100%;
     margin: 0 auto;
 }
 
-/* 상단바 코드 */
+
 header  {
     width: 100%;
     height: 80px;
@@ -61,7 +61,7 @@ header  {
 .main-nav li {
     display: inline-block;
     color: #000;
-    font-family: "맑은 고딕", 돋움;
+    font-family: "留묒� 怨좊뵓", �룍��;
     font-size: 1em;
     margin: 10px 10px;
 }
@@ -77,14 +77,14 @@ header  {
 .login-signup li {
     display: inline-block;
     color: #000;
-    font-family: "맑은 고딕", 돋움;
+    font-family: "留묒� 怨좊뵓", �룍��;
     font-size: 1em;
     margin: 10px 5px;
 }
 
 #navi .login-signup{
     float : right ;
-    /* margin-right: 30px;    */
+
     font-size: 0.8em;
     margin-top: 3px;
 }
@@ -92,7 +92,7 @@ header  {
 #navi .new-festival-back{
     float : right ;
     font-size: 1.2em;    
-    font-family: "맑은 고딕", 돋움;
+    font-family: "留묒� 怨좊뵓", �룍��;
     margin-left: 15px;
     background-color: #7BC8E6;   
     border-radius: 8px;  
@@ -122,7 +122,7 @@ header  {
 .main-nav li {
     display: inline-block;
     color: #000;
-    font-family: "맑은 고딕", "돋움";
+    font-family: "留묒� 怨좊뵓", "�룍��";
     font-size: 1em;
     margin: 10px 10px;
 }
@@ -138,7 +138,7 @@ header  {
 .login-signup li {
     display: inline-block;
     color: #000;
-    font-family: "맑은 고딕", "돋움";
+    font-family: "留묒� 怨좊뵓", "�룍��";
     font-size: 1em;
     margin: 10px 5px;
 }
@@ -152,7 +152,7 @@ header  {
 #navi .new-festival-back{
     float : right ;
     font-size: 1.2em;    
-    font-family: "맑은 고딕", "돋움";
+    font-family: "留묒� 怨좊뵓", "�룍��";
     margin-left: 15px;
     background-color: #7BC8E6;   
     border-radius: 8px;  
@@ -167,7 +167,7 @@ header  {
 	color:#7BC8E6;
 }
 
-/* 하단바 */
+/* �븯�떒諛� */
 #footer_container {
 	background-color:#2e2640;
 }
@@ -192,7 +192,7 @@ header  {
 
 #footerMenu > ul > li > span {
 	font-size:0.8em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	font-weight: bold;
 	margin-left:20px;
 	color:lightgrey;
@@ -200,7 +200,7 @@ header  {
 
 #footerMenu > ul > li > span:hover {
 	font-size:0.8em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	margin-left:20px;
 	color:#7BC8E6;
 }
@@ -211,7 +211,7 @@ header  {
 }
 #footerInfo > p {
 	font-size:0.5em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	font-weight: normal;
 	margin-left:15px;
 	color:lightgrey;
@@ -263,21 +263,21 @@ header  {
 
 #reviews_container span {
 	font-size:1.3em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	font-weight: bold;
 	color:#242424;
 }
 
 #reviews_container .categ {
 	font-size:0.9em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	font-weight: bold;
 	color:#242424;
 }
 
 #reviews_container .desc {
 	font-size:0.8em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	font-weight: normal;
 	color:#808080;
 }
@@ -297,7 +297,7 @@ header  {
 
 #participants_container span{
 	font-size:1.1em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	font-weight: bold;
 	color:#242424;
 }
@@ -311,7 +311,7 @@ header  {
 
 #open_festival_container span {
 	font-size:2em;
-	font-family: "맑은 고딕", "돋움";
+	font-family: "留묒� 怨좊뵓", "�룍��";
 	font-weight: bold;
 	color:#7BC8E6;
 }
