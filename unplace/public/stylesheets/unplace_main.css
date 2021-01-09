@@ -207,7 +207,7 @@ header  {
     font-weight: bold;
     padding: 15px 10% 0px 10% ;
     font-size: 0.9em;
-    color: #7D1626;
+    color: #9d9d9d;
 }
 
 #ranking .ranks{
@@ -219,6 +219,15 @@ header  {
 #ranking .rank-one{
     flex: 1;
 }
+
+#ranking .rank-one :hover{
+    color: #7d1626;
+}
+
+.hov:hover {
+	color:#7BC8E6;
+}
+
 
 #ranking .rank-one ul{
     text-align: center;
@@ -589,7 +598,7 @@ footer{
 
 #footerMenu > ul > li > span:hover {
 	font-size:0.8em;
-	font-family: "맑은고딕"", "돋움";
+	font-family: "맑은고딕", 돋움;
 	margin-left:20px;
 	color:#7BC8E6;
 }
