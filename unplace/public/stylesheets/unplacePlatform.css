@@ -1,11 +1,107 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+nav a{
+    color: #000;
+}
+h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.3em;
+}
+h3{
+    font-size: 1.2em;
+    color: #7D1626;
+}
+p {
+    font-size: 1.3em;
+    line-height: 2.5;
+}
+ li {
+    font-size: 1em;
+    line-height: 2;
+}
+#container {
+    width: 100%; /*화면 크기 비율 설정 */
+    margin: 0 auto;
+}
+
 /* 상단바 코드 */
 header  {
     width: 100%;
-    max-width: 1200px;
     height: 80px;
     background-size: cover;
 }
 
+#navi {
+    background-color: #fff;
+    position : fixed;
+    top : 0;
+    z-index:20;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 15px 10% 15px 10%;
+    box-shadow: 0px 4px 4px 3px rgb(209, 208, 208);
+    color: #000;
+    vertical-align:middle;
+}
+
+.main-nav li {
+    display: inline-block;
+    color: #000;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 1em;
+    margin: 10px 10px;
+}
+
+#navi .page-icon{
+    float: left;
+    margin-right: 30px;
+}
+#navi .main-nav{
+    float : left;
+}
+
+.login-signup li {
+    display: inline-block;
+    color: #000;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 1em;
+    margin: 10px 5px;
+}
+
+#navi .login-signup{
+    float : right ;
+    /* margin-right: 30px;    */
+    font-size: 0.8em;
+    margin-top: 3px;
+}
+
+#navi .new-festival-back{
+    float : right ;
+    font-size: 1.2em;    
+    font-family: "맑은 고딕", 돋움;
+    margin-left: 15px;
+    background-color: #7BC8E6;   
+    border-radius: 8px;  
+}
+
+#navi .new-festival{
+    margin: 5px;
+    color: white;
+}
 #navi {
     min-width: 860px;
     background-color: #fff;
@@ -53,8 +149,6 @@ header  {
     margin-top: 3px;
 }
 
-
-
 #navi .new-festival-back{
     float : right ;
     font-size: 1.2em;    
@@ -69,7 +163,19 @@ header  {
     color: white;
 }
 
+.hov:hover {
+	color:#7BC8E6;
+}
+
 /* 하단바 */
+#footer_container {
+	background-color:#2e2640;
+}
+
+#footerMenu {
+	margin-left:350px;
+	margin-right:350px;
+}
 
 #footerMenu > ul {
 	list-style:none;
@@ -88,47 +194,54 @@ header  {
 	font-size:0.8em;
 	font-family: "맑은 고딕", "돋움";
 	font-weight: bold;
-	margin-left:15px;
-	color:grey;
+	margin-left:20px;
+	color:lightgrey;
 }
 
 #footerMenu > ul > li > span:hover {
 	font-size:0.8em;
 	font-family: "맑은 고딕", "돋움";
-	margin-left:15px;
-	color:#c7340a;
+	margin-left:20px;
+	color:#7BC8E6;
 }
 
+#footerInfo {
+	margin-left:350px;
+	margin-right:350px;
+}
 #footerInfo > p {
 	font-size:0.5em;
 	font-family: "맑은 고딕", "돋움";
 	font-weight: normal;
 	margin-left:15px;
-	color:grey;
+	color:lightgrey;
 }
 
-#footerInfo > p > span {
-	color: light-grey;
-}
 
 /* advertisements */
 #advertisement_container {
 	width: 100%;
 	height: 400px;
-	background-image: url("/image_files/juhee_images/영어영문학과 연합MT.png");
 	background-size: cover;
+}
+
+#advertisement_container #startButton{
+	width:200px;
+	position:absolute;
+	top:300px;
+	left:700px;
 }
 
 /* category icons */
 #category_icons_container {
-	padding-left:180px;
+	padding-left:200px;
 	padding-right:180px;
 	width:100%;
 	height:150px;
 }
 
 #category_icons_container img {
-	width:100px;
+	width:120px;
 	height:100px;
 }
 
@@ -148,10 +261,65 @@ header  {
 	padding-left: 10px;
 }
 
+#reviews_container span {
+	font-size:1.3em;
+	font-family: "맑은 고딕", "돋움";
+	font-weight: bold;
+	color:#242424;
+}
+
+#reviews_container .categ {
+	font-size:0.9em;
+	font-family: "맑은 고딕", "돋움";
+	font-weight: bold;
+	color:#242424;
+}
+
+#reviews_container .desc {
+	font-size:0.8em;
+	font-family: "맑은 고딕", "돋움";
+	font-weight: normal;
+	color:#808080;
+}
+
 /* direct */
 #direct_container {
 	width:100%;
 	height: 220px;
-	background-image: url("/image_files/juhee_images/다이렉트.png");
 	background-size: cover;
+}
+
+/* participants */
+#participants_container {
+	margin-left:100px;
+	margin-right:100px;
+}
+
+#participants_container span{
+	font-size:1.1em;
+	font-family: "맑은 고딕", "돋움";
+	font-weight: bold;
+	color:#242424;
+}
+
+/* open festival */
+#open_festival_container {
+	width:100%;
+	height: 230px;
+	background-size: cover;
+}
+
+#open_festival_container span {
+	font-size:2em;
+	font-family: "맑은 고딕", "돋움";
+	font-weight: bold;
+	color:#7BC8E6;
+}
+
+#open_festival_container #openButton {
+	width:200px;
+	position:absolute;
+	top:300px;
+	left:100px;
+}
 }
