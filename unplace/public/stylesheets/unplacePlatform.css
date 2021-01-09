@@ -191,7 +191,7 @@ header  {
 }
 
 #footerMenu > ul > li > span {
-	font-size:0.8em;
+	font-size:0.9em;
 	font-family: "맑은 고딕", "돋움";
 	font-weight: bold;
 	margin-left:20px;
@@ -199,7 +199,7 @@ header  {
 }
 
 #footerMenu > ul > li > span:hover {
-	font-size:0.8em;
+	font-size:0.9em;
 	font-family: "맑은 고딕", "돋움";
 	margin-left:20px;
 	color:#7BC8E6;
@@ -210,12 +210,13 @@ header  {
 	margin-right:350px;
 }
 #footerInfo > p {
-	font-size:0.5em;
+	font-size:0.7em;
 	font-family: "맑은 고딕", "돋움";
 	font-weight: normal;
 	margin-left:15px;
 	color:lightgrey;
 }
+
 
 
 /* advertisements */
@@ -321,5 +322,4 @@ header  {
 	position:absolute;
 	top:300px;
 	left:100px;
-}
 }
