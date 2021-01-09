@@ -36,5 +36,5 @@ app.use('/users', users);   // URI('/users') 접속하면 users로 라우팅
 
 // 서버를 실행합니다.
 app.listen(PORT, function () {
-       console.log('서버실행: localhost/' + PORT);
+       console.log('서버실행: http://localhost:' + PORT);
 });
