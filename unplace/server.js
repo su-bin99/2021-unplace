@@ -8,8 +8,8 @@ const   path = require('path');
 const   app = express();
 
 const   mainui = require('./routes/mainui');
-const   users = require('./routes/users');
 const   firstpage = require('./routes/firstpage');
+const   login = require('./routes/login');
 //주소 설정
 const   PORT = 65007;
 
@@ -28,8 +28,8 @@ app.use(session({ key: 'sid',
 
 // URI와 핸들러를 매핑
 app.use('/', firstpage);       // URI (/) 접속하면 firstpage로 라우팅
-app.use('/users', users); 
 app.use('/mainui',mainui);
+app.use('/login',login);
 // app.use('/log', login);
 // app.use('/log', login);
 // app.use('/log', login);

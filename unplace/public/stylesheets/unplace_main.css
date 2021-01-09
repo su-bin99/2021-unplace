@@ -121,8 +121,7 @@ header  {
     font-family: "맑은 고딕", 돋움;
     margin-left: 15px;
     background-color: #7BC8E6;   
-    /* border-radius: 8px;   */
-    box-shadow: 1px 1px 1px 1px rgb(209, 208, 208);
+    border-radius: 8px;  
 }
 
 #navi .new-festival{
@@ -156,6 +155,28 @@ header  {
     margin: 20px 0px 0px 0px;
     vertical-align:middle;
     height:100%;
+}
+
+#univ-main .red-slogan {
+    position: relative;
+    width: 100%;
+    /* width: 100vw;
+    margin-left: calc(-50vw + 50%); */
+    height: 300px;
+    background: #7D1626;
+    text-align: center;
+}
+
+#univ-main .slogan pre {
+    font-weight: bold;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom : 30px;
+        /* vertical-align:middle; */
 }
 
 #univ-main .univ-fest-info li {
@@ -253,40 +274,29 @@ header  {
     /* background: url(image_files/호랑이마크.png) center no-repeat; */
     background-size: cover;
     background-position: center;
-    background-image: url( "/image_files/호랑이마크1.png" );
-    background-position: center;
+    border-collapse: collapse;
+
 }
 
 #timetable-event th{
     color: #969696;
+    background-image: url( "/image_files/호랑이마크.png" );
 }
 
 #timetable-event .line1 th{
     border-bottom: 2px solid #969696;
 }
 
-#timetable-event .actual-time{
-    display: inline-block;
-    vertical-align:middle;
-    
-    width: 85%;
-    height: 100%;
-    background-color: #EFE1E3;
-    color: #000;
-    text-align:center;
-    /* align-items: center; */
-    /* margin: 10px; */
-    /* padding: 10px; */
+#timetable-event td{
+    /* opacity: 0.8; */
+    color: #fff;
+    border-radius:3px;
 }
 
-#timetable-event p{
-    display: inline-block;
-    vertical-align:middle;
-    width: 100%;
-    height: 100%;
-    background-color: aquamarine;
-
-
+#timetable-event .actual-time{
+    background-color : none;
+    border: 3px solid #7D1626;
+    color: #000;
 }
 
 #timetable-event .actual-time:hover{
@@ -312,7 +322,6 @@ header  {
     border-radius: 2%;
     background-size: cover;
     background-image: url( "/image_files/호랑이마크2.png" );
-    background-position: center;
 }
 
 /* 축제로 이동하기 */
@@ -421,47 +430,19 @@ header  {
     flex:1;
 }
 
-/* 하단바 */
-
-footer{
-    background-color: #272735;
-    color: #fff;
+/* 하단 설명  */
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #7D1626;
 }
 
-#footerMenu > ul {
-	list-style:none;
-    margin:0;
-    padding:0;
+footer p {
+    font-family: 'Oleo Script', cursive;
+    font-size: 1.5em;
+    line-height: 100px;
+    color: white;
+    text-align: center;
 }
 
-#footerMenu > ul > li {
-	margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    border : 0;
-    float: left;
-}
-
-#footerMenu > ul > li > span {
-	font-size:0.9em;
-	font-family: "맑은 고딕", "돋움";
-	font-weight: bold;
-	margin-left:15px;
-}
-
-#footerMenu > ul > li > span:hover {
-	font-size:0.9em;
-	font-family: "맑은 고딕", "돋움";
-	margin-left:15px;
-	color:#7BC8E6;
-}
-
-#footerInfo > p {
-	font-size:0.7em;
-	font-family: "맑은 고딕", "돋움";
-	font-weight: normal;
-	margin-left:15px;
-}
-
-#footerInfo > p > span {
-	color: light-grey;
-}
