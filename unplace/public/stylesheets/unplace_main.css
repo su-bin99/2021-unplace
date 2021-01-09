@@ -273,12 +273,22 @@ header  {
     /* background-color: bisque; */
     /* background: url(image_files/호랑이마크.png) center no-repeat; */
     background-size: cover;
-    background-image: url( "image_files/호랑이마크.png" );
+<<<<<<< HEAD
+    background-position: center;
+    border-collapse: collapse;
 
 }
 
+#timetable-event th{
+    color: #969696;
+=======
+    background-image: url( "image_files/호랑이마크.png" );
+
+>>>>>>> 037d708eda8319d2ac6f7494b56f4d8cadb52099
+}
+
 #timetable-event .line1 th{
-    border-bottom: 2px solid #7D1626;
+    border-bottom: 2px solid #969696;
 }
 
 #timetable-event td{
@@ -287,9 +297,23 @@ header  {
     border-radius:3px;
 }
 
+<<<<<<< HEAD
+#timetable-event .actual-time{
+    background-color : none;
+    border: 3px solid #7D1626;
+    color: #000;
+}
+
+#timetable-event .actual-time:hover{
+    background-color : #7d1626;
+    color : #fff;
+}
+
+=======
+>>>>>>> 037d708eda8319d2ac6f7494b56f4d8cadb52099
 
 #timetable-event .th-left{
-    border-right: 2px solid #7D1626;
+    border-right: 2px solid #969696;
 }
 
 #timetable-event .event{
