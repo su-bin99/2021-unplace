@@ -6,23 +6,14 @@
     padding: 0;
 }
 
-body {
-    background: #fff;
-    font-family: "Jeju Gothic", serif;
-    min-width: 920px;
-}
+
 
 a {
     text-decoration: none;
 }
 
-nav a:link,
-a:visited {
+nav a{
     color: #000;
-}
-
-nav a:active {
-    color: yellow;
 }
 
 h1 {
@@ -53,7 +44,7 @@ li {
     margin: 0 auto;
 }
 
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
     #container {
         width: 1200px;
         margin: 0 auto;
@@ -62,20 +53,19 @@ li {
     header{
         width : 100;
     }
-}
+} */
 
 /* 상단바 코드 */
 header  {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     height: 80px;
     /* background: url(images/바보개.jpg) center no-repeat; */
     background-size: cover;
 }
 
 #navi {
-    min-width: 860px;
-
+    /* min-width: 920px; */
     background-color: #fff;
     position : fixed;
     top : 0;
@@ -86,8 +76,10 @@ header  {
     width: 100%;
     height: 80px;
     margin: 0;
-    padding: 15px 5% 15px 5%;
+    padding: 15px 10% 15px 10%;
     box-shadow: 0px 4px 4px 3px rgb(209, 208, 208);
+    color: #000;
+    vertical-align:middle;
 }
 
 .main-nav li {
@@ -100,7 +92,7 @@ header  {
 
 #navi .page-icon{
     float: left;
-    margin-right: 70px;
+    margin-right: 30px;
 }
 #navi .main-nav{
     float : left;
@@ -128,7 +120,8 @@ header  {
     font-size: 1.2em;    
     font-family: "맑은 고딕", 돋움;
     margin-left: 15px;
-    background-color: #7D1626;     
+    background-color: #7BC8E6;   
+    border-radius: 8px;  
 }
 
 #navi .new-festival{
@@ -136,12 +129,22 @@ header  {
     color: white;
 }
 
+/* 떠있는 버튼 */
+#floating-btn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 150px;
+    right: 5%;
+    z-index:20;
+}
+
 /* 학교 광고 및 홍보  */
 
 .univ-name{
     width: 700px;
     font-weight: bold;
-    padding: 0px 0px 0px 5% ;
+    padding: 0px 0px 0px 10% ;
 }
 
 #univ-main .univ-name li{
@@ -149,8 +152,9 @@ header  {
     color: #7D1626;
     font-family: "맑은 고딕", 돋움;
     font-size: 1.1em;
-    margin: 10px 0px 0px 0px;
-    /* text-align: center */
+    margin: 20px 0px 0px 0px;
+    vertical-align:middle;
+    height:100%;
 }
 
 #univ-main .red-slogan {
@@ -158,19 +162,21 @@ header  {
     width: 100%;
     /* width: 100vw;
     margin-left: calc(-50vw + 50%); */
-    height: 200px;
+    height: 300px;
     background: #7D1626;
-    border-top: 20px solid #7D1626;
     text-align: center;
 }
 
 #univ-main .slogan pre {
     font-weight: bold;
     font-family: "맑은 고딕", 돋움;
-    font-size: 2.3em;
+    font-size: 2.5em;
     color: white;
     text-align: center;
     margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom : 30px;
+        /* vertical-align:middle; */
 }
 
 #univ-main .univ-fest-info li {
@@ -185,7 +191,7 @@ header  {
 /* 인기 순위 */
 #ranking {
     font-weight: bold;
-    padding: 15px 0px 0px 5% ;
+    padding: 15px 10% 0px 10% ;
     font-size: 0.9em;
     color: #7D1626;
 }
@@ -198,13 +204,9 @@ header  {
 
 #ranking .rank-one{
     flex: 1;
-    /* flex-direction: row;
-    justify-content : center;
-    align-items : center; */
 }
 
 #ranking .rank-one ul{
-    /* border: 3px solid #7D1626; */
     text-align: center;
 }
 
@@ -217,11 +219,15 @@ header  {
 
 #ranking .rank-one img{
     box-sizing: border-box;
-    height: 130px;
-    width: 130px;
-    margin: 10px 10px 10px 0px;
-    border: 3px solid #7D1626;
+    height: 100px;
+    width: 100px;
+    margin: 10px 10px 0px 0px;
+    /* border: 3px solid #7D1626; */
     border-radius:50%;
+}
+
+#ranking .rank-one a{
+    font-size: 1.1em;
 }
 
 /* 시간표 , 이벤트 */
@@ -230,7 +236,7 @@ header  {
     display: flex;
     height: 350px;
     /* background-color: coral; */
-    margin: 40px 5% 0px 5% ;
+    margin: 40px 10% 20px 10% ;
 }
 
 
@@ -241,6 +247,16 @@ header  {
     margin: 7px;
 }
 
+#timetable-event li{
+    display: inline-block;
+}
+
+#timetable-event h4{
+    font-size: 0.9em;
+    margin-right: 5px;
+    color: #535353;
+}
+
 #timetable-event .content{
     box-sizing: border-box;
     height: 87%;
@@ -249,24 +265,65 @@ header  {
     border-radius: 2%;
 }
 
+#timetable-event .table{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-spacing:0;
+    /* background-color: bisque; */
+    /* background: url(image_files/호랑이마크.png) center no-repeat; */
+    background-size: cover;
+    background-image: url( "image_files/호랑이마크.png" );
+
+}
+
+#timetable-event .line1 th{
+    border-bottom: 2px solid #7D1626;
+}
+
+#timetable-event td{
+    /* opacity: 0.8; */
+    color: #fff;
+    border-radius:3px;
+}
+
+
+#timetable-event .th-left{
+    border-right: 2px solid #7D1626;
+}
+
 #timetable-event .event{
     flex : 2;
     margin: 7px;
+}
 
+#timetable-event .event-content{
+    box-sizing: border-box;
+    height: 87%;
+    margin: 10px 10px 10px 0px;
+    border: 3px solid #7D1626;
+    border-radius: 2%;
+    background-size: cover;
+    background-image: url( "image_files/호랑이마크2.png" );
 }
 
 /* 축제로 이동하기 */
 #go-Festv {
     position: relative;
     width: 100%;
-    height: 140px;
-    background: #333333;
-    border-top: 20px solid #333333;
+    height: 200px;
     text-align: left;
 }
 
+#go-Festv .go-Festv-back{
+    width: 100%;
+    height : 100%;
+    background-size: cover;
+    background-image: url("image_files/축제이동배경.png");
+}
+
 #go-Festv .to-Festv-info{
-    margin: 0px 0px 0px 8% ;
+    margin: 50px 0px 0px 15% ;
     float: left;
 }
 #go-Festv .go-festv-btn{
@@ -275,21 +332,21 @@ header  {
     height: 45px;
     margin: 20px 10px 10px 0px;
     background-color: yellow;
-    border-radius: 10%;
+    border-radius: 5px;
     text-align: center;
     color: #333333;
 }
 
-#go-Festv .festv-deco-img{
+#go-Festv img{
     float: right;
-    height: 10px;
-    margin-right: 300px;
+    height: 180px;
+    margin-right: 150px;
 }
 
 /* 후기 */
 #review {
     font-weight: bold;
-    padding: 30px 0px 0px 5% ;
+    padding: 30px 10% 0px 10% ;
     font-size: 0.9em;
     color: #7D1626;
 }
@@ -298,14 +355,10 @@ header  {
     display : flex;
     width: 100%;
     flex-direction: row;
-    
 }
 
 #review .review-one{
     flex: 1;
-    /* flex-direction: row;
-    justify-content : center;
-    align-items : center; */
 }
 
 #review .review-one ul{
@@ -314,26 +367,51 @@ header  {
 
 
 #review .review-one li{
-    /* box-sizing: border-box;
-    width: 150px;
-    margin: 0px 10px 0px 10px;
-    color: #000;
-    font-size: 12px; */
-
     display :block;
     text-align: left;
-    margin-right: 30px;
+    color: #000;
+    margin-right: 10px;
+    /* width: 180px; */
 }
 
-#review .review-one img{
+
+#review .image-back{
     box-sizing: border-box;
-    height: 150px;
-    width: 150px;
-    margin: 10px 10px 0px 0px;
-    border: 3px solid #7D1626;
-    border-radius:5%;
+    height: 200px;
+    width: 100%;
+    margin: 10px 5px 0px 0px;
+    border: 4px solid #7D1626;
+    /* border-radius:5%;   */
+    display : table;
 }
 
+#review .img-wrap{
+    display:block;
+    width: 100%;
+    vertical-align:middle;
+    display : table-cell;
+    text-align: center;
+}
+
+#review img{
+    width : 80px;
+    height : 0 auto;
+}
+
+/* 유튜브 링크 */
+#youtube {
+    display : flex;
+    flex-direction: row;
+    padding: 15px 10% 0px 10% ;
+}
+
+#youtube .youtube-stream{
+    flex : 2 ;
+}
+
+#youtube .youtube-chatting{
+    flex:1;
+}
 
 /* 하단 설명  */
 footer {
