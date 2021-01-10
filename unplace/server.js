@@ -11,6 +11,7 @@ const   mainui = require('./routes/mainui');
 const   firstpage = require('./routes/firstpage');
 const   login = require('./routes/login');
 const   list_page = require('./routes/list_page');
+const   pic = require('./routes/pic');
 //주소 설정
 const   PORT = 65007;
 
@@ -32,6 +33,7 @@ app.use('/', firstpage);       // URI (/) 접속하면 firstpage로 라우팅
 app.use('/mainui',mainui);
 app.use('/login',login);
 app.use('/list_page',list_page);
+app.use('/pic',pic);
 // app.use('/log', login);
 // app.use('/log', login);
 // app.use('/log', login);

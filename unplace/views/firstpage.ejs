@@ -22,8 +22,19 @@
                 <li><a href="" class="hov">가격안내</a></li>
             </ul>
             <ul class="login-signup">
-                <li><a href="" class="hov">로그인</a></li>
-                <li><a>|</a></li>
+				<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				<script src="https://apis.google.com/js/platform.js" async defer></script>
+				<script>
+					function onSignIn(googleUser) {
+						var profile = googleUser.getBasicProfile();
+						name=profile.getName()
+						email=profile.getEmail()
+						id=profile.getId()
+						sql = `INSERT INTO 'user' ('id', 'name', 'email') VALUES ("${id}","${name}","${email}")`;
+					}
+				</script>
+				<li><a href='/login/'>로그인</a></li>
+				<li><a>|</a></li>
                 <li><a href="" class="hov">회원 가입</a></li>
                 <li class="new-festival-back">
                     <a class="new-festival" href="">축제 개최하기</a>

@@ -9,13 +9,7 @@ const  GetMainUI = (req, res) => {   // 메인화면을 출력합니다
 let    htmlstream = '';
 
      logging(loglevel, '  GetMainUI() 호출 ! ');
-     res.render('firstpage',      
-     {
-      'label1': '김주희 님',
-     'label2': '로그아웃'});
-     
-      
-
+    res.render('pic');
 
 };
 
