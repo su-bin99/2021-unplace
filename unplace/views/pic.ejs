@@ -6,10 +6,366 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unplace</title>
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link href="/stylesheets/unplace_main.css" rel="stylesheet" type="text/css">
 </head>
+
+<body>
+    <header>
+        <nav id="navi">
+            <div class="page-icon">
+                <img src="/image_files/logo.PNG" height="50px" alt="">
+            </div>
+            <ul class="main-nav">
+                <li><a href="">학교 축제</a></li>
+                <li><a href="" target="blank">동아리 축제</a></li>
+                <li><a href="">관람</a></li>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">가격안내</a></li>
+            </ul>
+
+
+            <ul class="login-signup">
+                <a href='/login/'><li>로그인</li></a>
+                <li><a>|</a></li>
+                <li><a href="">회원 가입</a></li>
+                <li class="new-festival-back">
+                    <a class="new-festival" href="">축제 개최하기</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="floating-btn">
+        <div class="btn">
+            <img src="/image_files/search-img.png" height="50px" alt="">
+        </div>
+    </section>
+
+    <div id="container">
+
+        <section id="univ-main">
+            <div>
+                <ul class="univ-name">
+                    <li><img src="/image_files/kulogo.png" height="40px" alt=""></li>
+                    <li><a style="font-size: 1.5em;">고려 대학교</a></li>
+                    <li><area>D - 0</area></li>
+                </ul>
+            </div>
+
+            <div class="red-slogan">
+                <img src="/image_files/main-img.png" width="100%">
+            </div>
+        </section>
+
+
+        <section id="ranking">
+            <h3>인기 순위</h3>
+
+            <div class="ranks">
+                <div class="rank-one">
+                    <ul>
+                        <li>
+                            <a >
+                                <img src="/image_files/grayGame.png" 
+                                onmouseover="this.src='/image_files/game.png'" 
+                                onmouseout="this.src='/image_files/grayGame.png'">
+                            </a>
+                         
+                        </li>
+                        <li> <a class = "hov" >게임</a></li>
+
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li>
+                            <img src="/image_files/grayShow.png" 
+                            onmouseover="this.src='/image_files/show.png'" 
+                            onmouseout="this.src='/image_files/grayShow.png'">
+                        </li>                     
+                        <li> <a class = "hov">공연</a></li>
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li>
+                            <a href='/list_page/'>
+                                <img  src="/image_files/grayExhibit.png" 
+                                onmouseover="this.src='/image_files/exhibit.png'" 
+                                onmouseout="this.src='/image_files/grayExhibit.png'">
+                            </a>
+                        </li>                        
+                        <li> <a class = "hov">전시</a></li>
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li>
+                            <img src="/image_files/grayCostume.png" 
+                            onmouseover="this.src='/image_files/costume.png'" 
+                            onmouseout="this.src='/image_files/grayCostume.png'">
+                        </li>                        
+                        <li> <a class = "hov" >코스프레</a></li>
+                    </ul>
+                </div>
+                <div class="rank-one">
+                    <ul>
+                        <li>
+                            <img src="/image_files/grayShop.png" 
+                            onmouseover="this.src='/image_files/shop.png'" 
+                            onmouseout="this.src='/image_files/grayShop.png'">
+                        </li>     
+                        <li> <a class = "hov" >판매</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="lists" style = "margin: 40px 0px;">
+            <table id="lists_container">
+                <tr><td><span style="color : #7d1626">전시 목록 </span></td></tr>
+                <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+                <tr>
+                    <td width="20%">
+                        <img src="/image_files/1picture.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <img src="/image_files/2knitting.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <img src="/image_files/3photo.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <img src="/image_files/4food.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <img src="/image_files/5puppy.png" width="100%" height="200px">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categ">그림 | *****5</td>
+                    <td class="categ">뜨개질 | *****5</td>
+                    <td class="categ">사진 | *****5</td>
+                    <td class="categ">요리 | *****5</td>
+                    <td class="categ">사진 | *****5</td>
+                </tr>
+                <tr>
+                    <td class="desc">고3동안 많이 못그렸는데 오랜만에 그림을 그려보았어요! 다들 즐겁게 보시고 댓글 남겨주세요~ㅎㅎ</td>
+                    <td class="desc">드디어 겨울이 왔어요~! 겨울은 뭐다? 뜨개질하는 계절이다 ! 제가 만든 목도리에요~ 어떤가요?</td>
+                    <td class="desc">풍경사진 찍으러 다니는게 취미에요. </td>
+                    <td class="desc">오랜만에 요리를 해보았어요~ 다들 맛있다고해서 넘나 뿌듯했습니다. 구경해보세용ㅎㅎㅎ</td>
+                    <td class="desc">코로나때문에 맨날 저희짐 몽이만 찍고있어요,, 슬프냐구요? 전혀요! 우리 몽이 너무귀엽지 않나용?ㅎㅎ</td>
+                </tr>
+                <tr>
+                    <td class="categ" style="text-align:right">이재우</td>
+                    <td class="categ" style="text-align:right">이승희</td>
+                    <td class="categ" style="text-align:right">차정현</td>
+                    <td class="categ" style="text-align:right">김주희</td>
+                    <td class="categ" style="text-align:right">배수빈</td>
+                </tr>
+            </table>
+            
+            <table id="lists_container" style="margin-top : 30px">
+                <tr>
+                    <td width="20%">
+                        <img src="/image_files/6grad.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <img src="/image_files/7apple.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <img src="/image_files/8ocean.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <img src="/image_files/9ipadpic.png" width="100%" height="200px">
+                    </td>
+                    <td width="20%">
+                        <a href='/pic/'>
+                            <img src="/image_files/10pic.png" width="100%" height="200px">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categ">디자인 | *****5</td>
+                    <td class="categ">소비 | *****5</td>
+                    <td class="categ">사진 | *****5</td>
+                    <td class="categ">그림 | *****5</td>
+                    <td class="categ">사진 | *****5</td>
+                </tr>
+                <tr>
+                    <td class="desc">지난 학기에 졸업한 졸업생 할모니입니다,, 묵혀둔 졸작 자랑하러 왔어요</td>
+                    <td class="desc">안녕하세요 앱등입니다. 제가 산 애플 제품들을 소개해볼게요</td>
+                    <td class="desc">바다에 다녀온지 너무 오래돼서 작년에 다녀왔던 바다 사진을 보여드리려고해요~</td>
+                    <td class="desc">아이패드로 그림을 그려보았어요. 저같은 똥손도 그림을 그린답니다😂</td>
+                    <td class="desc">저희 집앞 풍경이에요 멋지지 않나요?</td>
+                </tr>
+                <tr>
+                    <td class="categ" style="text-align:right">이재우</td>
+                    <td class="categ" style="text-align:right">이승희</td>
+                    <td class="categ" style="text-align:right">차정현</td>
+                    <td class="categ" style="text-align:right">김주희</td>
+                    <td class="categ" style="text-align:right">배수빈</td>
+                </tr>
+            </table>
+        </section>
+
+       
+
+        <section id=go-Festv>
+            <div class=go-Festv-back>
+                <div class=to-Festv-info>
+                    <p style="color:yellow; font-size: 18px;">고려대축제 즐겨봅시다!</p>
+                    <p style="color:white; font-size: 14px; line-height: 0.6;"> 가장 화려하고 신나는 곳으로 갑시다~! </p>
+                    <div class=go-festv-btn>
+                        <p>바로 보기</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class=festv-deco-img>
+                <img src="/image_files/firework.png" height="140px" alt="">
+            </div> -->
+        </section>
+
+
+
+        <section id="review">
+            <h3>고려대축제 후기</h3>
+
+            <div class="reviews">
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/game2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>게임</p>
+                        </li>
+                        <li> <a>인터넷으로 하는 마피아게임이 이렇게 재미있을 줄 몰랐어요! 다음에는 꼭 우승을해서 상품을 타가겠습니다!</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/costume2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>코스프레</p>
+                        </li>
+                        <li> <a>코스프레 사진들 구경 잘했습니다! 다음엔 저도 참여하고 싶네요!ㅎㅎ</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/costume2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>코스프레</p>
+                        </li>
+                        <li> <a>코스프레 퀄리티가 높아서 놀랐어요..! 다음엔 저도 참여해보고 싶네요ㅎㅎ</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/exhibit2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>전시</p>
+                        </li>
+                        <li> <a>손재주가 좋으신 분들이 정말 많으시군요~ 하나하나 제작하시느라 오래 걸리셨을 것 같아요</a></li>
+                    </ul>
+                </div>
+                <div class="review-one">
+                    <ul>
+                        <li>
+                            <div class="image-back">
+                                <div class="img-wrap">
+                                    <img src="/image_files/game2.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>게임</p>
+                        </li>
+                        <li> <a>우승 ㄱㅇㄷ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+    </div>
+	<!-- open festival -->
+	<section id="open_festival">
+		<div id="open_festival_container" style="background-image:url('/image_files/juhee_images/fireWork.png')">
+			<table style="padding-top:50px; margin-left:190px;">
+				<tr><td><span>수많은 대학들이 만족한 서비스, 지금 바로 경험해보세요.</span></td></tr>
+				<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+				<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+				<tr><td style="padding-left:270px;"><img src="/image_files/juhee_images/startFestival.png" width="200px"></td></tr>
+			</table>
+		</div>
+	</section>
+	
+	<!-- footer -->
+	<footer>
+		<section id="footer">
+			<div id="footer_container">
+				<br>
+				<div id="footerMenu">
+					<ul>
+						<li><span>회사소개</span></li>
+						<li><span>학교협업문의</span></li>
+						<li><span>이용약관</span></li>
+						<li><span>개인정보처리방침</span></li>
+						<li><span>사업자확인</span></li>
+					</ul>
+				</div>
+				<br><br>
+				
+				<hr style="margin-left:170px; width:70%">
+				
+				<br>
+				<div id="footerInfo">
+					<p>
+					서울특별시 송파구 올림픽로 0000000 | 대표자 000
+					<br>
+					사업자등록번호: 000-00-00000 | 통신판매업자신고번호: 송파 제 0000호 | 전화: 0000-0000
+					<br><br><br><br>
+
+					</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+			
+		</section>
+	</footer>
+
+
+</body>
 
 
 </html>

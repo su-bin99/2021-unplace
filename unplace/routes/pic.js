@@ -9,7 +9,7 @@ const  GetMainUI = (req, res) => {   // 메인화면을 출력합니다
 let    htmlstream = '';
 
      logging(loglevel, '  GetMainUI() 호출 ! ');
-    res.render('pic');
+    res.render('post_page');
 
 };
 
